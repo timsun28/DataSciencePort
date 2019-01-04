@@ -23,5 +23,25 @@ I will maintain this structure to keep this portfolio organised and easy to read
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
 
 ### Datacamp: 
+We were granted access to a full DataCamp account during this course.
+Beforehand a couple of courses and chapters were selected for us to finish.
+I was able to finish all the courses on time except for the final two, because of a prioritization for my project. 
 ![DataCamp Courses](/images/DataCamp_courses.png)
+
+##### Introduction to Python
+Because of my previous experience with Python, this course didn't really add much to my knowledge on Python. 
+
+##### Intermediate Python for Data Science
+In this course I have gained experience working with Pandas, which was a great help during the rest of my project. 
+This was also my first time working with matplotlib. This helped me to visualize my future findings in data science.
+
+##### Introduction to Data Visualization with Python
+I have continued to expand my knowledge on different ways of visualizing the given Data. 
+Because we only received raw email data from our Project owner it was difficult to visualize our data at first. 
+After some experimenting I was able to convert the text to values that I was able to plot and that were helpful for the project.
+An example of this is the following graph depicting the amount of emails sent per month to the project owner about the noted categories. 
+This graph gave us an the project owner a good visual overview of when emails were send and the outliers. 
+![DataCamp Courses](/images/email_categorien_per_maand.jpg)
+
+
 
