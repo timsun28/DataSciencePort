@@ -25,7 +25,7 @@ I will specify which courses I have taken and in cases where the courses were re
 ### Datacamp: 
 We were granted access to a full DataCamp account during this course.
 Beforehand a couple of courses and chapters were selected for us to finish.
-I was able to finish all the courses on time except for the final two, because of a prioritization for my project. 
+I was able to finish all the courses on time except for the final two, because of prioritization for my project. 
 ![DataCamp Courses](/images/DataCamp_courses.png)
 
 ##### Introduction to Python
@@ -58,7 +58,49 @@ Because I didn't have a lot of experience with Dataframes this course was really
 In our main project we mostly used pandas to store our data in.
 
 ##### Exploratory data analysis
-This chapter wasn't as helpful as the others. This was because 
+This chapter wasn't as helpful as the others. This was mostly because the focus 
+during the chapter was mostly on representing numeric values in graphs through the use of pandas.
+Because of the shape of our data in strings, we didn't have the ability to use this knowledge.
+
+##### Python Data Science Toolbox (Part 2)
+This course wasn't really helpful for our project. However it was a nice refresh of using different methods to process large amounts of data.
+It was also the first time for me to use a generator in python. It was interesting to see the use cases for this function. 
+I haven't used the data loading in chunks methods in our project. Our dataset was small enough for our laptops to load all the data at once. 
+
+##### Plotting 2D arrays
+For our project we mostly plotted accuracies and f1 scores to visualize the performance of a certain model or type of feature. 
+This made it that the course about 2d arrays was interesting, but not very useful for our project. 
+The issue I had with plotting function was that I always needed to look them up after I was done with the chapter.
+It was helpful tho showcase the possibilities, but it will still take lots of practice to get used to the different functions and parameters. 
+
+##### Statistical plots with Seaborn
+This chapter was again not very useful for our project. It helped me to use seaborn and see the possibilities it can provide.
+I wish I would have been able to use it in our project, but i will keep it in mind for future projects. 
+
+##### Cleaning Data in Python
+Because this course was mainly focused on numerical data analyses it wasn't as useful as I hoped it to be.
+For our project we performed a lot of data cleaning. This mostly contained retrieving the email from a large file and cleaning our replies from all the emails. 
+Because our data was all text I had to look elsewhere for ways to clean out the unnecessary data.
+
+##### Statistical Thinking in Python (Part 1)
+This entire chapter was very useful as a way to practise working with a numerical dataset. 
+However it was of no use for our project. As mentioned above, I wasn't able to convert text to meaningful numerical values. 
+
+##### Supervised Learning with scikit-learn
+This was probably the most useful course in the entire Datacamp selection for our project. 
+Especially the classification and fine-tuning your model chapters were very useful and gave clear instructions of ways to combat a certain issue.
+The chapter about fine-tuning your model helped us once we got our first model working with the data. 
+It assisted me to find different ways on finding possibilities to improve the accuracy of our model. 
+
+##### Conclusion:
+In the beginning DataCamp didn't really add anything to my knowledge on Python. 
+It did help my team mates progress and understand better at what I was working on.
+Some courses were not related to our project. Because of this I wasn't able to put everything into practise. 
+I did learn a lot from the courses and chapters that I will take with me to upcoming projects.
+
+### Coursera: 
+
+
 
 
 
