@@ -35,13 +35,34 @@ Because of my previous experience with Python, this course didn't really add muc
 In this course I have gained experience working with Pandas, which was a great help during the rest of my project. 
 This was also my first time working with matplotlib. This helped me to visualize my future findings in data science.
 
-##### Introduction to Data Visualization with Python
+##### Customizing plots
 I have continued to expand my knowledge on different ways of visualizing the given Data. 
 Because we only received raw email data from our Project owner it was difficult to visualize our data at first. 
 After some experimenting I was able to convert the text to values that I was able to plot and that were helpful for the project.
 An example of this is the following graph depicting the amount of emails sent per month to the project owner about the noted categories. 
 This graph gave us an the project owner a good visual overview of when emails were send and the outliers. 
 ![DataCamp Courses](/images/email_categorien_per_maand.jpg)
+
+##### Introduction and flat files
+For this course we only had to finish the first chapter. This chapter mostly teached me about different ways of reading our files. 
+At first we didn't have access to csv file and we had to work with text files for our project. This later changed when we received new exports. 
+These exports could be easily imported into a Pandas dataframe. 
+
+##### Writing your own functions
+This course was mostly basic knowledge for me as well. It didn't really help me much in the project, because I was already working with functions.
+
+
+##### Data ingestion & inspection
+This chapter mostly helped me understand the basic functionality from Pandas. 
+Because I didn't have a lot of experience with Dataframes this course was really helpful to showcase the possibilities.
+In our main project we mostly used pandas to store our data in.
+
+##### Exploratory data analysis
+This chapter wasn't as helpful as the others. This was because 
+
+
+
+
 
 
 
