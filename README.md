@@ -99,6 +99,19 @@ Some courses were not related to our project. Because of this I wasn't able to p
 I did learn a lot from the courses and chapters that I will take with me to upcoming projects.
 
 ### Coursera: 
+Coursera was mostly theoretical assistance for the understanding of machine learning. 
+At the beginning of our minor we were given lessons on machine learning 
+mathematics that were given by: Dr. J. Vuurens who did his PhD at the TU Delft on Data Science.
+After these lessons we would take the online Machine learning course by Stanford University. 
+This course was mostly repetition and more examples concerning machine learning.
+
+Beforehand we were given a list of quizes we had to finish in certain weeks of the course. 
+These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be seen in the following screenshot:
+
+![Coursera Courses](/images/Coursera.png)
+
+
+
 
 
 
