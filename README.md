@@ -111,6 +111,35 @@ These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be see
 ![Coursera Courses](/images/Coursera.png)
 
 
+## Friday Presentations:
+For our project we had to present our progress and issues each friday to an audience.
+Once every two weeks the audience consisted of only students and the teachers. 
+The other friday was a public presentation where project owners were allowed to come and sit in.
+It was important to keep in mind when it was a public presentation in order to prepare the presentation for the correct audience.
+
+### Preperation:
+As a group we always prepared the presentation together. Because our team was 
+split up in different specialities we always came together before the 
+presentation to discuss our progress and issues. This was than converted into a presentation. 
+We tried to get everyone to present as often as possible in order for everyone to do their part. 
+This meant presenting once every two weeks. We also tried to present in groups 
+of two where there is at least one student who is working primarily on the code and one student who focuses more on the report.
+
+### List of presentations:
+* [Week 1](/presentations/2018.08.31%20Presentatie.pptx)
+* [Week 2](/presentations/2018.09.07%20Presentatie.pptx)
+* [Week 3](/presentations/2018.09.14%20Presentatie.pptx)
+* [Week 4](/presentations/2018.09.21%20Presentatie.pptx)
+* [Week 5](/presentations/2018.09.28%20Presentatie.pptx)
+* [Week 6](/presentations/2018.10.05%20Presentatie.pptx)
+* [Week 7](/presentations/2018.10.12%20Presentatie.pptx)
+* [Week 8](/presentations/2018.10.19%20Presentatie.pptx)
+* [Week 10](/presentations/2018.11.02%20Presentatie.pptx)
+* [Week 11](/presentations/2018.11.09%20Presentatie.pptx)
+* [Week 12](/presentations/2018.11.16%20Presentatie.pptx)
+* [Week 14](/presentations/2018.11.30%20Presentatie.pptx)
+* [Week 15](/presentations/2018.12.07%20Presentatie.pptx)
+* [Week 17](/presentations/2018.12.21%20Presentatie.pptx)
 
 
 
