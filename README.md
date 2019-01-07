@@ -179,7 +179,7 @@ who worked on what.
 I will explain my progress and what I have learned from working on this task. 
 As well as the final result and how it was useful for our project. 
 
-<details><summary>#### Analyzing received dataset</summary>
+#### Analyzing received dataset  
 ##### Description: 
 This ticket was made to analyze the data we received from our project owner. 
 The data was given in a  txt file with no explanation of the structure. 
@@ -200,7 +200,6 @@ questions was noted and it would end with the word: Category.
 This could be used as a second separator to filter out the original question. 
 With this result we could start our next task to build a data cleaner to filter 
 out all the asked questions from the datafile. 
-</details>
 
 #### Cleaning received data
 ##### Description:
