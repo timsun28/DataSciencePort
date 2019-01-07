@@ -243,15 +243,35 @@ def clean_file(file_name):
          return result
 ```
 
-#### Setting up the model for training the data
+#### Labeling Questions
 ##### Description:
-In this task we had to prepare our project for training our classified data. We wanted to try out as many different models with different type of features as possible. Another goal was to figure out a way to compare the different results to evaluate the models. 
+After creating an export where we split all the questions up into sentences we 
+were going to label the questions. We decided to use binary labels, where a 0 
+stands for a non relevant sentence and a 1 for a relevant sentence. 
 
 ##### Process:
-We started by looking on the internet to figure out best practises for this issue. 
-We came across this tutorial, that seemed to match our issue. 
+We uploaded the export to excel online, where we could work on it together. 
+Because the first dataset that we labeled was around 4000 sentences, it would 
+be much more efficient to work on it as a group. After labeling all the 
+questions we stored it as a csv again and created our first dataset that we 
+could use to train our selected machine learning models.
 
-link(https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/)
+##### Result:
+A csv file with two columns: Classification and sentence. This csv file could 
+than be imported into our code and we could use it to fit our models.
+
+
+#### Setting up the model for training the data
+##### Description:
+In this task we had to prepare our project for training our classified data. 
+We wanted to try out as many different models with different type of features 
+as possible. Another goal was to figure out a way to compare the different 
+results to evaluate the models. 
+
+##### Process:
+We started by looking on the internet to figure out best practises for this 
+issue. We came across this tutorial, that seemed to match our issue. 
+[Guide Text Classifications](https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python)
 
 After implementing most of the functions that worked for us we tried to get 
 some baseline results from all the different models.
@@ -259,11 +279,11 @@ This way we wanted to be able to focus more on specific models.
 
 ##### Result:
 At first almost all the models had an accuracy of around 80%. 
-This later came to light as a rookie mistake, because our model was labeled 
-about 80% as a 0 and 20% as a 1.  This meant that even with models reaching an 
-accuracy of about 80% labeled all their sentences as not relevant. With this 
-conclusion we created new tasks to figure out different ways of measuring the 
-performance of a certain set of model and feature. 
+This later came to light as a rookie mistake, because our classification was 
+labeled where about 80% as 0 and 20% as 1. This meant that some models 
+predicted all their sentences as 0 and got 80% correct. With this conclusion we 
+created new tasks to figure out different ways of measuring the performance of 
+a certain set of model and feature. 
 
 
 #### Trying different methods and storing results in readable format
@@ -352,6 +372,9 @@ create_confusion_matrix(classifications, predictions, 'Logistic Regression')
         plt.xlabel('Predicted label')
         plt.tight_layout()
 ```
+
+![Confusion Matrix](/images/confusion_matrix.png)
+
 
 
 
