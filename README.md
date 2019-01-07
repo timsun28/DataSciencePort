@@ -18,6 +18,13 @@ This portfolio needed to contain the following points:
 
 I will maintain this structure to keep this portfolio organised and easy to read.
 
+Table of contents:
+1. [Datacamp](#Datacamp:)
+1. [Coursera](#Coursera:)
+1. [Friday Presentations](#Friday Presentations:)
+1. [Scrum](#Scrum:)
+
+
 
 ## Courses: 
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
@@ -142,7 +149,7 @@ of two where there is at least one student who is working primarily on the code 
 * [Week 17](/presentations/2018.12.21%20Presentatie.pptx)
 
 
-## Scrum
+## Scrum:
 At the start of the course we were advised to use some kind of scrum methodology to keep track of our project.
 We decided to use Scrumwise to keep track of our sprint progress. 
 In this chapter I'm going to pick out certain tasks that I worked on. 
