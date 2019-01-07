@@ -142,6 +142,14 @@ of two where there is at least one student who is working primarily on the code 
 * [Week 17](/presentations/2018.12.21%20Presentatie.pptx)
 
 
+## Scrum
+At the start of the course we were advised to use some kind of scrum methodology to keep track of our project.
+We decided to use Scrumwise to keep track of our sprint progress. 
+In this chapter I'm going to pick out certain tasks that I worked on. 
+I will explain my progress and what I have learned from working on this task. 
+As well as the final result and how it was useful for our project. 
+
+###
 
 
 
