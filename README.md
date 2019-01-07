@@ -169,14 +169,133 @@ of two where there is at least one student who is working primarily on the code 
 
 
 ## Scrum
-At the start of the course we were advised to use some kind of scrum methodology to keep track of our project.
+At the start of the course we were advised to use some kind of scrum 
+methodology to keep track of our project.
 We decided to use Scrumwise to keep track of our sprint progress. 
 In this chapter I'm going to pick out certain tasks that I worked on. 
+In the following tasks i write as if I worked on it alone. This is not the case 
+for all the tasks, but it would make it unclear if I would note for every line 
+who worked on what.
 I will explain my progress and what I have learned from working on this task. 
 As well as the final result and how it was useful for our project. 
 
 #### Analyzing received dataset
+##### Description: 
+This ticket was made to analyze the data we received from our project owner. 
+The data was given in a  txt file with no explanation of the structure. 
+So we had to do our analyses the file by ourself and figure out the way the 
+file was dumped from their database. 
 
+##### Process:
+We started by opening the file in a text editor to get an idea of the structure. 
+After some time we noticed it was a dump of emails containing the original 
+questions asked to our project owner and replies from the people who answer 
+their questions. For us the goal of this task was to find a specific separator 
+to filter out the questions asked. 
+
+##### Result:
+In the file we found that the word: Vraag:  (question in dutch) was a separator 
+that we could use to filter out the asked question. After this separator the 
+questions was noted and it would end with the word: Category. 
+This could be used as a second separator to filter out the original question. 
+With this result we could start our next task to build a data cleaner to filter 
+out all the asked questions from the datafile. 
+
+
+#### Cleaning received data
+##### Description:
+This task consisted of creating a function that would split the input file 
+into a list of emails. This function should be made so it can always be used 
+for every new file and returns the result as a list.
+
+##### Process: 
+With the results from the data analysis I took the two separators and created a 
+function for cleaning the data. This function takes the filename as a parameter 
+so it can be used with new files. Apart from the split on the separators, 
+I also added some basic cleaning like the \n that got hardcoded into the file. 
+There was also a need for cleaning white spaces from the sentences. 
+
+##### Result:
+The result of this task was a function that would retrieve all the questions 
+asked in the dump file. It is also able to clean the emails from ‘\n’ and 
+whitespaces.
+
+```python
+def clean_file(file_name):
+         """
+         function that cleans the data and returns a list with all the questions
+         :return:
+         """
+         f = open(file_name, 'r')
+         file = f.read()
+         result = list()
+         split = file.split('Vraag:')
+         for index, question in enumerate(split):
+            try:
+                res = question.split('Category')
+                result_cleaned = res[0].strip().replace('E-mail content by category', '').strip()
+                result_cleaned = result_cleaned.replace('\n', '')
+                result_cleaned = ' '.join(result_cleaned.split())
+                if result_cleaned not in result:
+                    result.append(result_cleaned)
+            except IndexError:
+            # in case the question couldn't be split a second time
+                continue
+         return result
+```
+
+#### Setting up the model for training the data
+##### Description:
+In this task we had to prepare our project for training our classified data. We wanted to try out as many different models with different type of features as possible. Another goal was to figure out a way to compare the different results to evaluate the models. 
+
+##### Process:
+We started by looking on the internet to figure out best practises for this issue. 
+We came across this tutorial, that seemed to match our issue. 
+
+link(https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/)
+
+After implementing most of the functions that worked for us we tried to get 
+some baseline results from all the different models.
+This way we wanted to be able to focus more on specific models. 
+
+##### Result:
+At first almost all the models had an accuracy of around 80%. 
+This later came to light as a rookie mistake, because our model was labeled 
+about 80% as a 0 and 20% as a 1.  This meant that even with models reaching an 
+accuracy of about 80% labeled all their sentences as not relevant. With this 
+conclusion we created new tasks to figure out different ways of measuring the 
+performance of a certain set of model and feature. 
+
+
+#### Trying different methods and storing results in readable format
+##### Description:
+This task described the process of creating code to store our results in an 
+easy way, so the rest of the team could use them to draw conclusions from them. 
+I wasn’t well aware of the different possibilities to visualize the 
+performance of a model, I also had to do some research. 
+
+##### Process:
+It started by looking at sklearn and their metrics module. 
+This module is used to score functions and create performance metrics. 
+It became clear that apart from the accuracy we also needed the recall to 
+calculate the total amount of true positives. Together with the F1 score, 
+that combines the recall and precision we decided to use those metrics to 
+describe the performance of our model. I also started working with confusion matrices. 
+These visualization helped me understand our results in a better 
+way and was also very helpful to display our findings during public presentations. 
+Because we used a binary classification the confusion matrix was a 2x2 table 
+that was easy to explain and use.
+
+##### Result:
+The result from this task was a class to calculate the metrics for our results. 
+I also finished a function to create a confusion matrix given the 
+classification and predictions. Part of this code was found on the sklearn 
+website. I added my own function that could be called like this. 
+It would then create two confusion matrices. 
+
+```python
+create_confusion_matrix(classifications, predictions, 'Logistic Regression')
+```
 
 ```python
     def create_confusion_matrix(self, valid_y, predictions_valid, model_name):
