@@ -374,6 +374,13 @@ create_confusion_matrix(classifications, predictions, 'Logistic Regression')
 ```
 
 ![Confusion Matrix](/images/confusion_matrix.png)
+What is depicted in this image: 
+69 sentences that we classified as interesting were predicted as interesting
+28 sentences that we classified as interesting were predicted as not interesting
+79 sentences that we classified as not interesting were predicted as interesting
+371 sentences that we classified as not interesting were predicted as not interesting
+
+
 
 
 
