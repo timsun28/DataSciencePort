@@ -19,10 +19,10 @@ This portfolio needed to contain the following points:
 I will maintain this structure to keep this portfolio organised and easy to read.
 
 Table of contents:
-1. [Datacamp](#Datacamp:)
-1. [Coursera](#Coursera:)
-1. [Friday Presentations](#Friday Presentations:)
-1. [Scrum](#Scrum:)
+1. [Datacamp:](#Datacamp:)
+1. [Coursera:](#Coursera:)
+1. [Friday Presentations:](#Friday-Presentations:)
+1. [Scrum:](#Scrum:)
 
 
 
