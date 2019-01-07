@@ -1,6 +1,6 @@
 # Personal Data Science Portfolio Timo Frionnet
 
-## Introduction:
+## Introduction
 As a part of my Minor Data Science at the Hague University of Applied Sciences we had to maintain our own Data Science Portfolio.
 This portfolio needed to contain the following points:
 1. Courses (add screenshots of the online courses you have finished (DataCamp, Coursera, etc))
@@ -18,10 +18,10 @@ This portfolio needed to contain the following points:
 
 I will maintain this structure to keep this portfolio organised and easy to read.
 
-##Table of contents:
-- [Introduction:](#introduction)
-- [Courses:](#courses)
-  - [Datacamp:](#datacamp)
+##Table of contents
+- [Introduction](#introduction)
+- [Courses](#courses)
+  - [Datacamp](#datacamp)
       - [Introduction to Python](#introduction-to-python)
       - [Intermediate Python for Data Science](#intermediate-python-for-data-science)
       - [Customizing plots](#customizing-plots)
@@ -35,20 +35,20 @@ I will maintain this structure to keep this portfolio organised and easy to read
       - [Cleaning Data in Python](#cleaning-data-in-python)
       - [Statistical Thinking in Python (Part 1)](#statistical-thinking-in-python-part-1)
       - [Supervised Learning with scikit-learn](#supervised-learning-with-scikit-learn)
-      - [Conclusion:](#conclusion)
-  - [Coursera:](#coursera)
-- [Friday Presentations:](#friday-presentations)
-  - [Preperation:](#preperation)
-  - [List of presentations:](#list-of-presentations)
-- [Scrum:](#scrum)
+      - [Conclusion](#conclusion)
+  - [Coursera](#coursera)
+- [Friday Presentations](#friday-presentations)
+  - [Preperation](#preperation)
+  - [List of presentations](#list-of-presentations)
+- [Scrum](#scrum)
 
 
 
 
-## Courses: 
+## Courses
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
 
-### Datacamp: 
+### Datacamp
 We were granted access to a full DataCamp account during this course.
 Beforehand a couple of courses and chapters were selected for us to finish.
 I was able to finish all the courses on time except for the final two, because of prioritization for my project. 
@@ -118,13 +118,13 @@ Especially the classification and fine-tuning your model chapters were very usef
 The chapter about fine-tuning your model helped us once we got our first model working with the data. 
 It assisted me to find different ways on finding possibilities to improve the accuracy of our model. 
 
-##### Conclusion:
+##### Conclusion
 In the beginning DataCamp didn't really add anything to my knowledge on Python. 
 It did help my team mates progress and understand better at what I was working on.
 Some courses were not related to our project. Because of this I wasn't able to put everything into practise. 
 I did learn a lot from the courses and chapters that I will take with me to upcoming projects.
 
-### Coursera: 
+### Coursera
 Coursera was mostly theoretical assistance for the understanding of machine learning. 
 At the beginning of our minor we were given lessons on machine learning 
 mathematics that were given by: Dr. J. Vuurens who did his PhD at the TU Delft on Data Science.
@@ -137,13 +137,13 @@ These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be see
 ![Coursera Courses](/images/Coursera.png)
 
 
-## Friday Presentations:
+## Friday Presentations
 For our project we had to present our progress and issues each friday to an audience.
 Once every two weeks the audience consisted of only students and the teachers. 
 The other friday was a public presentation where project owners were allowed to come and sit in.
 It was important to keep in mind when it was a public presentation in order to prepare the presentation for the correct audience.
 
-### Preperation:
+### Preperation
 As a group we always prepared the presentation together. Because our team was 
 split up in different specialities we always came together before the 
 presentation to discuss our progress and issues. This was than converted into a presentation. 
@@ -151,7 +151,7 @@ We tried to get everyone to present as often as possible in order for everyone t
 This meant presenting once every two weeks. We also tried to present in groups 
 of two where there is at least one student who is working primarily on the code and one student who focuses more on the report.
 
-### List of presentations:
+### List of presentations
 * [Week 1](/presentations/2018.08.31%20Presentatie.pptx)
 * [Week 2](/presentations/2018.09.07%20Presentatie.pptx)
 * [Week 3](/presentations/2018.09.14%20Presentatie.pptx)
@@ -168,7 +168,7 @@ of two where there is at least one student who is working primarily on the code 
 * [Week 17](/presentations/2018.12.21%20Presentatie.pptx)
 
 
-## Scrum:
+## Scrum
 At the start of the course we were advised to use some kind of scrum methodology to keep track of our project.
 We decided to use Scrumwise to keep track of our sprint progress. 
 In this chapter I'm going to pick out certain tasks that I worked on. 
