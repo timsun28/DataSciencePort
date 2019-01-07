@@ -18,7 +18,7 @@ This portfolio needed to contain the following points:
 
 I will maintain this structure to keep this portfolio organised and easy to read.
 
-##Table of contents
+## Table of contents
 - [Introduction](#introduction)
 - [Courses](#courses)
   - [Datacamp](#datacamp)
