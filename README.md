@@ -180,8 +180,6 @@ As well as the final result and how it was useful for our project.
 
 ```python
     def create_confusion_matrix(self, valid_y, predictions_valid, model_name):
-        print(predictions_valid)
-
         # Compute confusion matrix
         cnf_matrix = confusion_matrix(valid_y, predictions_valid)
         np.set_printoptions(precision=2)
@@ -201,7 +199,6 @@ As well as the final result and how it was useful for our project.
 
         plt.show()
 
-    @staticmethod
     def plot_confusion_matrix(cm, classes,
                               normalize=False,
                               title='Confusion matrix',
@@ -209,6 +206,7 @@ As well as the final result and how it was useful for our project.
         """
         This function prints and plots the confusion matrix.
         Normalization can be applied by setting `normalize=True`.
+        https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html
         """
         if normalize:
             cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
