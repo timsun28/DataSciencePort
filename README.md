@@ -324,12 +324,50 @@ sentence = regex.sub('LOCATION', sentence)
 # Sentence is now: This is a test sentence from LOCATION
 ```
 
-After comparing the performance of our model with and without normalization of the locations, we found that it improved on average with 0.1%
-Unfortunately it didn't help much, but it was still nice to use an external data source to clean our data. 
+After comparing the performance of our model with and without normalization of 
+the locations, we found that it improved on average with 0.1%.
+Unfortunately it didn't help much, but it was still helpful to use an external 
+data source for personal development. 
 
 
 ##Evaluation
+The evaluation of the models was usually done with the precision, recall and f1 scores. 
+These scores made it easy to compare models when using a variable amount of features or when comparing different models.
+Because you are using numeric values, it is also easy to visualize the results. 
+
+Apart from numeric evaluation, we also performed an error analyses. 
+By exporting all the incorrect predictions we have been able to improve our 
+initial classification and find patterns on where the model has issues to perform.
+It was funny to see how the model was in some cases better at recognizing 
+relevant questions than we intentionally labeled. After relabeling these questions the results of our model improved. 
+Finding patterns in the mistakes was also a part of our error analyses. 
+The most noticeable mistake that was made had to do with unique names and other personal information.
+Greetings with names or signatures at the bottom of emails were sometimes 
+incorrectly labeled as an interesting question. 
+
+At this point we haven't figured out a way to give a certain weight to these 
+questions, but this could be a way to elevate this project to a next level to 
+get above the 90% accuracy.
+
 ##Diagnostics of the learning process
+For me the learning process of working with Datacamp was pleasant. 
+Most of the courses contained something interesting that I could use in our own project. 
+This made it so that I could directly apply the things that i had learned 
+during the DataCamp courses. Unfortunately not all the courses were relevant for
+our project. Nevertheless Datacamp gave me a good feeling of the basics of Machine Learning 
+and if I am able to use it in the future I would definitely. 
+
+The Coursera courses were helpful for background understanding of the models and their functionality.
+Also to see the bigger picture and how the process of machine learning was better explained.  
+Less useful was the fact that in the Coursera courses Python was not the 
+programming language used for coding. This meant I could not use all of the same tools they used. 
+This way I always had to take an extra step to look for an alternative and I 
+could not directly apply everything I learned to my project.
+
+The entire Minor that I followed was a very entry level way of learning the basics of Machine Learning. 
+Because I had previous experience with working with Python I could directly 
+start with the Machine learning part of the minor. It was also helpful for my team because I could help 
+them with their problems and I could teach them best practices in Python.  
 
 ## Friday Presentations
 For our project we had to present our progress and issues each friday to an audience.
