@@ -221,10 +221,67 @@ In the following two figures it is shown that for both recall and precision the 
 As you can see the difference between these values is so small it won't have an 
 effect on the outcome of our project.
 
+In order for the predictive models to understand our data we needed to prepare it first. 
+All the sentences were converted into vectors for the model to be able to understand the data.
+I will describe the two different methods that we followed for converting our sentences into these vectors.
 
+
+In the following example the Count Vectorizer is created and the full data set is fitted on the vectorizer.
+Once the vectorizer is done it will create a Vector for the given sentences (X)
+The output of this process can be used as a input for a predictive model
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+import pandas as pd
+
+# The full vocabulary of the file
+all_text = pd.Series
+X = pd.Series
+
+# Variable amount of features could be set beforehand to prevent the model to overfit the data.
+amount_features = 1500
+
+# Creating the count vectorizer with the given parameters.
+count_vect = CountVectorizer(analyzer='word', token_pattern=r'\w{1,}', max_features=amount_features)
+
+# Fit all the data on the count vectorizer.
+count_vect.fit(all_text)
+
+# Transform the wanted sentences into a count vector
+X_count = count_vect.transform(X)
+```
+
+
+The same goes for the TF-IDF transformer. In the given example the three possible transformers are displayed.
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+import pandas as pd
+
+# The full vocabulary of the file
+all_text = pd.Series
+X = pd.Series
+
+# Variable amount of features could be set beforehand to prevent the model to overfit the data.
+amount_features = 1500
+
+# Creating the Tfidf Vectorizer with the given parameters.
+tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', max_features=amount_features)
+tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2, 5), max_features=amount_features)
+tfidf_vect_ngram_chars = TfidfVectorizer(analyzer='char', token_pattern=r'\w{1,}', ngram_range=(2,3), max_features=amount_features)
+
+# Fit all the data on the TF-IDF vectorizer.
+tfidf_vect.fit(all_text)
+tfidf_vect_ngram.fit(all_text)
+tfidf_vect_ngram_chars.fit(all_text)
+
+# Transform the wanted sentences into a TF-IDF vector
+X_TF_IDF = tfidf_vect.transform(X)
+X_TF_IDF_ngram = tfidf_vect_ngram.transform(X)
+X_TF_IDF_ngram_chars = tfidf_vect_ngram_chars.transform(X)
+```
 
 
 ##Data Visualization
+
 ##Data collection
 ##Evaluation
 ##Diagnostics of the learning process
