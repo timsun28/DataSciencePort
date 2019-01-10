@@ -18,53 +18,60 @@ This portfolio needed to contain the following points:
 
 I will maintain this structure to keep this portfolio organised and easy to read.
 
-## Table of contents:
-- [Introduction](#introduction)
-- [Courses](#courses)
-  * [Datacamp](#datacamp)
-      - [Introduction to Python](#introduction-to-python)
-      - [Intermediate Python for Data Science](#intermediate-python-for-data-science)
-      - [Customizing plots](#customizing-plots)
-      - [Introduction and flat files](#introduction-and-flat-files)
-      - [Writing your own functions](#writing-your-own-functions)
-      - [Data ingestion & inspection](#data-ingestion---inspection)
-      - [Exploratory data analysis](#exploratory-data-analysis)
-      - [Python Data Science Toolbox (Part 2)](#python-data-science-toolbox--part-2-)
-      - [Plotting 2D arrays](#plotting-2d-arrays)
-      - [Statistical plots with Seaborn](#statistical-plots-with-seaborn)
-      - [Cleaning Data in Python](#cleaning-data-in-python)
-      - [Statistical Thinking in Python (Part 1)](#statistical-thinking-in-python--part-1-)
-      - [Supervised Learning with scikit-learn](#supervised-learning-with-scikit-learn)
-      - [Conclusion](#conclusion)
-  * [Coursera](#coursera)
-- [Friday Presentations](#friday-presentations)
-  * [Preperation](#preperation)
-  * [List of presentations](#list-of-presentations)
-- [Scrum](#scrum)
-    + [Analyzing received dataset](#analyzing-received-dataset)
-      - [Description](#description)
-      - [Process](#process)
-      - [Result](#result)
-    + [Cleaning received data](#cleaning-received-data)
-      - [Description](#description-1)
-      - [Process](#process-1)
-      - [Result](#result-1)
-    + [Labeling Questions](#labeling-questions)
-      - [Description](#description-2)
-      - [Process](#process-2)
-      - [Result](#result-2)
-    + [Setting up the model for training the data](#setting-up-the-model-for-training-the-data)
-      - [Description](#description-3)
-      - [Process](#process-3)
-      - [Result](#result-3)
-    + [Trying different methods and storing results in readable format](#trying-different-methods-and-storing-results-in-readable-format)
-      - [Description](#description-4)
-      - [Process](#process-4)
-      - [Result](#result-4)
-    + [Update import function for new CSV format](#update-import-function-for-new-csv-format)
-      - [Description](#description-5)
-      - [Process](#process-5)
-      - [Result](#result-5)
+## Table of contents
+- [Personal Data Science Portfolio Timo Frionnet](#personal-data-science-portfolio-timo-frionnet)
+  * [Introduction](#introduction)
+  * [Courses](#courses)
+    + [Datacamp](#datacamp)
+        * [Introduction to Python](#introduction-to-python)
+        * [Intermediate Python for Data Science](#intermediate-python-for-data-science)
+        * [Customizing plots](#customizing-plots)
+        * [Introduction and flat files](#introduction-and-flat-files)
+        * [Writing your own functions](#writing-your-own-functions)
+        * [Data ingestion & inspection](#data-ingestion---inspection)
+        * [Exploratory data analysis](#exploratory-data-analysis)
+        * [Python Data Science Toolbox (Part 2)](#python-data-science-toolbox--part-2-)
+        * [Plotting 2D arrays](#plotting-2d-arrays)
+        * [Statistical plots with Seaborn](#statistical-plots-with-seaborn)
+        * [Cleaning Data in Python](#cleaning-data-in-python)
+        * [Statistical Thinking in Python (Part 1)](#statistical-thinking-in-python--part-1-)
+        * [Supervised Learning with scikit-learn](#supervised-learning-with-scikit-learn)
+        * [Conclusion](#conclusion)
+    + [Coursera](#coursera)
+  * [Predictive Models](#predictive-models)
+  * [Data preparation](#data-preparation)
+  * [Data Visualization](#data-visualization)
+  * [Data collection](#data-collection)
+  * [Evaluation](#evaluation)
+  * [Diagnostics of the learning process](#diagnostics-of-the-learning-process)
+  * [Friday Presentations](#friday-presentations)
+    + [Preperation](#preperation)
+    + [List of presentations](#list-of-presentations)
+  * [Scrum](#scrum)
+      - [Analyzing received dataset](#analyzing-received-dataset)
+        * [Description](#description)
+        * [Process](#process)
+        * [Result](#result)
+      - [Cleaning received data](#cleaning-received-data)
+        * [Description](#description-1)
+        * [Process](#process-1)
+        * [Result](#result-1)
+      - [Labeling Questions](#labeling-questions)
+        * [Description](#description-2)
+        * [Process](#process-2)
+        * [Result](#result-2)
+      - [Setting up the model for training the data](#setting-up-the-model-for-training-the-data)
+        * [Description](#description-3)
+        * [Process](#process-3)
+        * [Result](#result-3)
+      - [Trying different methods and storing results in readable format](#trying-different-methods-and-storing-results-in-readable-format)
+        * [Description](#description-4)
+        * [Process](#process-4)
+        * [Result](#result-4)
+      - [Update import function for new CSV format](#update-import-function-for-new-csv-format)
+        * [Description](#description-5)
+        * [Process](#process-5)
+        * [Result](#result-5)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -162,7 +169,7 @@ These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be see
 ![Coursera Courses](/images/Coursera.png)
 
 
-##Predictive Models
+## Predictive Models
 This chapter will explain more on how I have used different predictive models during my project.
 I will reference certain scrum tasks for more detail.
 
@@ -230,7 +237,7 @@ print('cross-validation scores:')
 print(score(y_cross,classifier.predict(xcross_count),average='weighted'))
 ```
 
-##Data preparation
+## Data preparation
 Our data preperation mostly consisted of cleaning the data and creating the 
 needed features for the models we wanted to use.
 
@@ -304,8 +311,7 @@ X_TF_IDF_ngram = tfidf_vect_ngram.transform(X)
 X_TF_IDF_ngram_chars = tfidf_vect_ngram_chars.transform(X)
 ```
 
-
-##Data Visualization
+## Data Visualization
 Once all the coding and testing is done, the most important final chapter is to 
 visualize your findings. After doing research on possibilities to visualize your findings we tried multiple graphs.
 Most of the graphs were for clarification in the research paper, but we also 
@@ -317,7 +323,7 @@ shown in the scrum ticket: Trying different methods and storing results in reada
 
 
 
-##Data collection
+## Data collection
 The data collection part of our project was absent, because we received our 
 data set directly from the project owner. 
 
@@ -355,7 +361,7 @@ Unfortunately it didn't help much, but it was still helpful to use an external
 data source for personal development. 
 
 
-##Evaluation
+## Evaluation
 The evaluation of the models was usually done with the precision, recall and f1 scores. 
 These scores made it easy to compare models when using a variable amount of features or when comparing different models.
 Because you are using numeric values, it is also easy to visualize the results. 
@@ -374,7 +380,7 @@ At this point we haven't figured out a way to give a certain weight to these
 questions, but this could be a way to elevate this project to a next level to 
 get above the 90% accuracy.
 
-##Diagnostics of the learning process
+## Diagnostics of the learning process
 For me the learning process of working with Datacamp was pleasant. 
 Most of the courses contained something interesting that I could use in our own project. 
 This made it so that I could directly apply the things that i had learned 
