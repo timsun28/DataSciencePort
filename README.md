@@ -214,9 +214,12 @@ get a better performing model. I would than try those methods out on our data an
 directly with the original score to see if it would improve. Most of the cleaning we performed
 didn't have a big impact on the scores, and some results even made the score worse.
 In the following two figures it is shown that for both recall and precision the cleaning on our data had marginal effect.
+
 ![Precision score](/images/precision_cross_val_cleaning.png)
 ![Recall score](/images/Recall_cross_val_cleaning.png)
-As you can see the difference between these values is so small it won't have an effect on the outcome of our project.
+
+As you can see the difference between these values is so small it won't have an 
+effect on the outcome of our project.
 
 
 
