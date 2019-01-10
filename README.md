@@ -45,7 +45,7 @@ I will maintain this structure to keep this portfolio organised and easy to read
   * [Evaluation](#evaluation)
   * [Diagnostics of the learning process](#diagnostics-of-the-learning-process)
   * [Friday Presentations](#friday-presentations)
-    + [Preperation](#preperation)
+    + [Preparation](#preparation)
     + [List of presentations](#list-of-presentations)
   * [Scrum](#scrum)
       - [Analyzing received dataset](#analyzing-received-dataset)
@@ -73,10 +73,6 @@ I will maintain this structure to keep this portfolio organised and easy to read
         * [Process](#process-5)
         * [Result](#result-5)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-
 ## Courses
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
 
@@ -98,7 +94,7 @@ I have continued to expand my knowledge on different ways of visualizing the giv
 Because we only received raw email data from our Project owner it was difficult to visualize our data at first. 
 After some experimenting I was able to convert the text to values that I was able to plot and that were helpful for the project.
 An example of this is the following graph depicting the amount of emails sent per month to the project owner about the noted categories. 
-This graph gave us an the project owner a good visual overview of when emails were send and the outliers. 
+This graph gave us an the project owner a good visual overview of when emails were sent and the outliers. 
 ![DataCamp Courses](/images/email_categorien_per_maand.jpg)
 
 ##### Introduction and flat files
@@ -129,7 +125,7 @@ I haven't used the data loading in chunks methods in our project. Our dataset wa
 For our project we mostly plotted accuracies and f1 scores to visualize the performance of a certain model or type of feature. 
 This made it that the course about 2d arrays was interesting, but not very useful for our project. 
 The issue I had with plotting function was that I always needed to look them up after I was done with the chapter.
-It was helpful tho showcase the possibilities, but it will still take lots of practice to get used to the different functions and parameters. 
+It was helpful to showcase the possibilities, but it will still take lots of practice to get used to the different functions and parameters. 
 
 ##### Statistical plots with Seaborn
 This chapter was again not very useful for our project. It helped me to use seaborn and see the possibilities it can provide.
@@ -152,7 +148,7 @@ It assisted me to find different ways on finding possibilities to improve the ac
 
 ##### Conclusion
 In the beginning DataCamp didn't really add anything to my knowledge on Python. 
-It did help my team mates progress and understand better at what I was working on.
+It did help my project members progress and get a better understanding on what I was working on.
 Some courses were not related to our project. Because of this I wasn't able to put everything into practise. 
 I did learn a lot from the courses and chapters that I will take with me to upcoming projects.
 
@@ -163,8 +159,8 @@ mathematics that were given by: Dr. J. Vuurens who did his PhD at the TU Delft o
 After these lessons we would take the online Machine learning course by Stanford University. 
 This course was mostly repetition and more examples concerning machine learning.
 
-Beforehand we were given a list of quizes we had to finish in certain weeks of the course. 
-These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be seen in the following screenshot:
+Beforehand we were given a list of quizzes we had to finish in certain weeks of the course. 
+These were: Week 1, 2, 3 and 6 quizzes. The completion of these quizzes can be seen in the following screenshot:
 
 ![Coursera Courses](/images/Coursera.png)
 
@@ -188,7 +184,7 @@ A predictive model doesn't accept a list of raw strings as an input.
 So we had to convert these strings into vectors that could be used by our models.
 With most of these models we have tried different feature sets. 
 The following feature sets were used for testing the performance of a model. 
-Creation of these feature sets is explained in further detail at Data Preperation.
+Creation of these feature sets is explained in further detail at Data Preparation.
 
 - Count Vectors
 - TF-IDF Vectors 
@@ -238,7 +234,7 @@ print(score(y_cross,classifier.predict(xcross_count),average='weighted'))
 ```
 
 ## Data preparation
-Our data preperation mostly consisted of cleaning the data and creating the 
+Our data preparation mostly consisted of cleaning the data and creating the 
 needed features for the models we wanted to use.
 
 In order to clean the data I did research on different methods people used to 
@@ -406,10 +402,10 @@ Once every two weeks the audience consisted of only students and the teachers.
 The other friday was a public presentation where project owners were allowed to come and sit in.
 It was important to keep in mind when it was a public presentation in order to prepare the presentation for the correct audience.
 
-### Preperation
+### Preparation
 As a group we always prepared the presentation together. Because our team was 
 split up in different specialities we always came together before the 
-presentation to discuss our progress and issues. This was than converted into a presentation. 
+presentation to discuss our progress and issues. This was then converted into a presentation. 
 We tried to get everyone to present as often as possible in order for everyone to do their part. 
 This meant presenting once every two weeks. We also tried to present in groups 
 of two where there is at least one student who is working primarily on the code and one student who focuses more on the report.
