@@ -137,6 +137,80 @@ These were: Week 1, 2, 3 and 6 quizes. The completion of these quizes can be see
 ![Coursera Courses](/images/Coursera.png)
 
 
+##Predictive Models
+This chapter will explain more on how I have used different predictive models during my project.
+I will reference certain scrum tasks for more detail.
+
+We used Predictive Models in the first part of our project. We classified our 
+dataset per sentence if it was a relevant question. After our classification we used the data
+to train and test our different predictive models.
+For our project we have worked with the following predictive models:
+
+- Naive Bayes Classifier
+- Linear Classifier
+- Support Vector machine
+- Bagging Models
+- Boosting Models
+
+A predictive model doesn't accept a list of raw strings as an input. 
+So we had to convert these strings into vectors that could be used by our models.
+With most of these models we have tried different feature sets. 
+The following feature sets were used for testing the performance of a model. 
+Creation of these feature sets is explained in further detail at Data Preperation.
+
+- Count Vectors
+- TF-IDF Vectors 
+    - Word level
+    - N-gram level
+    - Character level
+
+The final two models we did most of our testing one was the Naive Bayes Classifier and the Logistic Regression.
+In our model we came to the conclusion that for classifying relevant questions from our dataset,
+it was best to use Logistic Regression with Count Vectors set to 1500 features.
+
+A basic representation of how we used these models can be seen in the following example:
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.metrics import precision_recall_fscore_support as score
+import pandas as pd
+
+# DataFrame would be loaded at this point
+trainDF = pd.DataFrame()
+
+# Split on train, test and cross validation (60%, 20%, 20%)
+X_train, X_test, y_train, y_test = train_test_split(trainDF['cleaned_sentence'], trainDF['classification'], test_size=0.4, random_state=42)
+X_test, X_cross, y_test, y_cross = train_test_split(X_test, y_test, test_size=0.5, random_state=42)
+
+# Create the countvectorizer and create the features for the model
+count_vect = CountVectorizer(analyzer='word', token_pattern=r'\w{1,}', max_df=1.0, max_features=1500)
+count_vect.fit(trainDF['sentence'])
+xtrain_count = count_vect.transform(X_train)
+xvalid_count = count_vect.transform(X_test)
+xcross_count = count_vect.transform(X_cross)
+
+# Prepare the model and fit it on the training data
+model = LogisticRegression(solver='lbfgs')
+mc_model = OneVsRestClassifier(model)
+classifier = mc_model.fit(xtrain_count, y_train)
+
+# Predict the labels and compare them to the pre-classified labels
+print('training scores:')
+print(score(y_train,classifier.predict(xtrain_count),average='weighted'))
+print('test scores:')
+print(score(y_test,classifier.predict(xvalid_count),average='weighted'))
+print('cross-validation scores:')
+print(score(y_cross,classifier.predict(xcross_count),average='weighted'))
+```
+
+##Data preparation
+##Data Visualization
+##Data collection
+##Evaluation
+##Diagnostics of the learning process
+
 ## Friday Presentations
 For our project we had to present our progress and issues each friday to an audience.
 Once every two weeks the audience consisted of only students and the teachers. 
@@ -180,20 +254,20 @@ I will explain my progress and what I have learned from working on this task.
 As well as the final result and how it was useful for our project. 
 
 #### Analyzing received dataset  
-##### Description: 
+##### Description
 This ticket was made to analyze the data we received from our project owner. 
 The data was given in a  txt file with no explanation of the structure. 
 So we had to do our analyses the file by ourself and figure out the way the 
 file was dumped from their database. 
 
-##### Process:
+##### Process
 We started by opening the file in a text editor to get an idea of the structure. 
 After some time we noticed it was a dump of emails containing the original 
 questions asked to our project owner and replies from the people who answer 
 their questions. For us the goal of this task was to find a specific separator 
 to filter out the questions asked. 
 
-##### Result:
+##### Result
 In the file we found that the word: Vraag:  (question in dutch) was a separator 
 that we could use to filter out the asked question. After this separator the 
 questions was noted and it would end with the word: Category. 
@@ -202,19 +276,19 @@ With this result we could start our next task to build a data cleaner to filter
 out all the asked questions from the datafile. 
 
 #### Cleaning received data
-##### Description:
+##### Description
 This task consisted of creating a function that would split the input file 
 into a list of emails. This function should be made so it can always be used 
 for every new file and returns the result as a list.
 
-##### Process: 
+##### Process
 With the results from the data analysis I took the two separators and created a 
 function for cleaning the data. This function takes the filename as a parameter 
 so it can be used with new files. Apart from the split on the separators, 
 I also added some basic cleaning like the \n that got hardcoded into the file. 
 There was also a need for cleaning white spaces from the sentences. 
 
-##### Result:
+##### Result
 The result of this task was a function that would retrieve all the questions 
 asked in the dump file. It is also able to clean the emails from ‘\n’ and 
 whitespaces.
@@ -244,31 +318,31 @@ def clean_file(file_name):
 ```
 
 #### Labeling Questions
-##### Description:
+##### Description
 After creating an export where we split all the questions up into sentences we 
 were going to label the questions. We decided to use binary labels, where a 0 
 stands for a non relevant sentence and a 1 for a relevant sentence. 
 
-##### Process:
+##### Process
 We uploaded the export to excel online, where we could work on it together. 
 Because the first dataset that we labeled was around 4000 sentences, it would 
 be much more efficient to work on it as a group. After labeling all the 
 questions we stored it as a csv again and created our first dataset that we 
 could use to train our selected machine learning models.
 
-##### Result:
+##### Result
 A csv file with two columns: Classification and sentence. This csv file could 
 than be imported into our code and we could use it to fit our models.
 
 
 #### Setting up the model for training the data
-##### Description:
+##### Description
 In this task we had to prepare our project for training our classified data. 
 We wanted to try out as many different models with different type of features 
 as possible. Another goal was to figure out a way to compare the different 
 results to evaluate the models. 
 
-##### Process:
+##### Process
 We started by looking on the internet to figure out best practises for this 
 issue. We came across this tutorial, that seemed to match our issue. 
 [Guide Text Classifications](https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python)
@@ -277,7 +351,7 @@ After implementing most of the functions that worked for us we tried to get
 some baseline results from all the different models.
 This way we wanted to be able to focus more on specific models. 
 
-##### Result:
+##### Result
 At first almost all the models had an accuracy of around 80%. 
 This later came to light as a rookie mistake, because our classification was 
 labeled where about 80% as 0 and 20% as 1. This meant that some models 
@@ -287,13 +361,13 @@ a certain set of model and feature.
 
 
 #### Trying different methods and storing results in readable format
-##### Description:
+##### Description
 This task described the process of creating code to store our results in an 
 easy way, so the rest of the team could use them to draw conclusions from them. 
 I wasn’t well aware of the different possibilities to visualize the 
 performance of a model, I also had to do some research. 
 
-##### Process:
+##### Process
 It started by looking at sklearn and their metrics module. 
 This module is used to score functions and create performance metrics. 
 It became clear that apart from the accuracy we also needed the recall to 
@@ -305,7 +379,7 @@ way and was also very helpful to display our findings during public presentation
 Because we used a binary classification the confusion matrix was a 2x2 table 
 that was easy to explain and use.
 
-##### Result:
+##### Result
 The result from this task was a class to calculate the metrics for our results. 
 I also finished a function to create a confusion matrix given the 
 classification and predictions. Part of this code was found on the sklearn 
@@ -381,7 +455,7 @@ What is depicted in this image:
 371 sentences that we classified as not interesting were predicted as not interesting
 
 #### Update import function for new CSV format
-##### Description:
+##### Description
 The function we created previously got outdated, because we received a new data 
 format from our project owner.
 They were able to export the data into csv files. This new format would be 
@@ -390,9 +464,49 @@ In this task we needed to create a new function that would read the csv file.
 We also needed to analyse the data to see if we would also need a new cleaner 
 function or if we could use the one we already had.
 
-##### Process:
-I first started this task with the analyses of the given csv files. 
+##### Process
+I first started this task with the analyses of the given csv files. This file 
+was structured differently than the previous file we used in our project. 
+From this point it was decided to use Pandas for storing our data in the code.
+This was very useful because of the from_csv function pandas supplies. 
+This was added to our project and we could now store the new files in Pandas Dataframes
+One of the columns was labeled: TEXT_CONTENT which still had the same structure as the original file.
+This meant that we only had to run some basic tests to see if the result was still as expected.
+Apart from this there we tried to fix the issue where replies on the emails were also extracted from the data dump.
+Because we now had access to the subject of the email, we made a function to 
+separate the emails into a dataframe with only replies and one without replies.
 
+##### Result
+After this task we finished our second importer. 
+From now on we had more certainty that the data was correct and because of the
+structure we could also possibly use more metadata from the file like date and
+type of message (html or txt)
+
+The function that splits the dataset into two different sets (one for replies and one without the replies)
+we made the following function: 
+
+```python
+def split_replies_from_file(data_frame):
+    """
+    Based on certain keywords we can find the subjects that are a reply to a certain person.
+    These answers do not contain any questions, so they were kept out.
+    These can be used for different research.
+    :param data_frame:
+    :return:
+    """
+    unwantedSubjectStarts = ('re', 'undelivered', 'fw', 'geen onderwerp')
+    unwanted_code = '#'
+    without_classification = data_frame[~data_frame['SUBJECT'].str.lower().str.contains(unwanted_code)]
+    without_replies = without_classification[~without_classification['SUBJECT'].str.lower().str.startswith(unwantedSubjectStarts)]
+    only_classification = data_frame[data_frame['SUBJECT'].str.lower().str.contains(unwanted_code)]
+    only_replies = only_classification[only_classification['SUBJECT'].str.lower().str.startswith(unwantedSubjectStarts)]
+    return without_replies, only_replies
+```
+
+The unwantedSubjectStarts is a tuple with strings of common words used in
+the email subjects. In case a subject starts with one of these words it gets filtered out.
+
+ 
 
 
 
