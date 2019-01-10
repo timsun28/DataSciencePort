@@ -438,7 +438,7 @@ who worked on what.
 I will explain my progress and what I have learned from working on this task. 
 As well as the final result and how it was useful for our project. 
 
-#### Analyzing received dataset  
+### Analyzing received dataset  
 ##### Description
 This ticket was made to analyze the data we received from our project owner. 
 The data was given in a  txt file with no explanation of the structure. 
@@ -460,7 +460,7 @@ This could be used as a second separator to filter out the original question.
 With this result we could start our next task to build a data cleaner to filter 
 out all the asked questions from the datafile. 
 
-#### Cleaning received data
+### Cleaning received data
 ##### Description
 This task consisted of creating a function that would split the input file 
 into a list of emails. This function should be made so it can always be used 
@@ -502,7 +502,7 @@ def clean_file(file_name):
          return result
 ```
 
-#### Labeling Questions
+### Labeling Questions
 ##### Description
 After creating an export where we split all the questions up into sentences we 
 were going to label the questions. We decided to use binary labels, where a 0 
@@ -520,7 +520,7 @@ A csv file with two columns: Classification and sentence. This csv file could
 than be imported into our code and we could use it to fit our models.
 
 
-#### Setting up the model for training the data
+### Setting up the model for training the data
 ##### Description
 In this task we had to prepare our project for training our classified data. 
 We wanted to try out as many different models with different type of features 
@@ -545,7 +545,7 @@ created new tasks to figure out different ways of measuring the performance of
 a certain set of model and feature. 
 
 
-#### Trying different methods and storing results in readable format
+### Trying different methods and storing results in readable format
 ##### Description
 This task described the process of creating code to store our results in an 
 easy way, so the rest of the team could use them to draw conclusions from them. 
@@ -639,7 +639,7 @@ What is depicted in this image:
 79 sentences that we classified as not interesting were predicted as interesting
 371 sentences that we classified as not interesting were predicted as not interesting
 
-#### Update import function for new CSV format
+### Update import function for new CSV format
 ##### Description
 The function we created previously got outdated, because we received a new data 
 format from our project owner.
