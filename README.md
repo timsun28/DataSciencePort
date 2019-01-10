@@ -168,7 +168,7 @@ The final two models we did most of our testing one was the Naive Bayes Classifi
 In our model we came to the conclusion that for classifying relevant questions from our dataset,
 it was best to use Logistic Regression with Count Vectors set to 1500 features.
 
-A basic representation of how we used these models can be seen in the following example:
+A basic representation of how these models are used, can be seen in the following example:
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
@@ -206,6 +206,21 @@ print(score(y_cross,classifier.predict(xcross_count),average='weighted'))
 ```
 
 ##Data preparation
+Our data preperation mostly consisted of cleaning the data and creating the 
+needed features for the models we wanted to use.
+
+In order to clean the data I did research on different methods people used to 
+get a better performing model. I would than try those methods out on our data and compare them
+directly with the original score to see if it would improve. Most of the cleaning we performed
+didn't have a big impact on the scores, and some results even made the score worse.
+In the following two figures it is shown that for both recall and precision the cleaning on our data had marginal effect.
+![Precision score](/images/precision_cross_val_cleaning.png)
+![Recall score](/images/Recall_cross_val_cleaning.png)
+As you can see the difference between these values is so small it won't have an effect on the outcome of our project.
+
+
+
+
 ##Data Visualization
 ##Data collection
 ##Evaluation
