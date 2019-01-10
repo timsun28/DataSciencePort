@@ -281,8 +281,53 @@ X_TF_IDF_ngram_chars = tfidf_vect_ngram_chars.transform(X)
 
 
 ##Data Visualization
+Once all the coding and testing is done, the most important final chapter is to 
+visualize your findings. After doing research on possibilities to visualize your findings we tried multiple graphs.
+Most of the graphs were for clarification in the research paper, but we also 
+made some graphs that were used in the friday presentations and just for 
+the team to better understand the results.
+
+The visualization I made for our project were the Confusion Matrices that are 
+shown in the scrum ticket: Trying different methods and storing results in readable format.
+
+
 
 ##Data collection
+The data collection part of our project was absent, because we received our 
+data set directly from the project owner. 
+
+As part of our data cleaning process we did use an external dataset. 
+We wanted to see if we would normalize all the Dutch city names into a 
+normalized word: LOCATION
+
+We found a dump of all the cities in the Netherlands in Json format. 
+We made this function to retrieve only the city names and replace them with LOCATION in our own dataset.
+
+```python
+import re
+import json
+
+def get_locations():
+    f = open('DataSources/locations_json', 'r', encoding='UTF-8')
+    file = f.read()
+    encoded_json = json.loads(file)
+    all_locations = list()
+    for location in encoded_json['value']:
+        all_locations.append(location['Title'].lower())
+    return all_locations
+    
+all_locations = get_locations()
+
+sentence = 'This is a test sentence from Amsterdam'
+regex = re.compile(r'\b%s\b' % r'\b|\b'.join(map(re.escape, all_locations)))
+sentence = regex.sub('LOCATION', sentence)
+# Sentence is now: This is a test sentence from LOCATION
+```
+
+After comparing the performance of our model with and without normalization of the locations, we found that it improved on average with 0.1%
+Unfortunately it didn't help much, but it was still nice to use an external data source to clean our data. 
+
+
 ##Evaluation
 ##Diagnostics of the learning process
 
