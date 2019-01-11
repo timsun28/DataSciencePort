@@ -77,28 +77,33 @@ I will maintain this structure to keep this portfolio organised and easy to read
 In this personal portfolio the follow terms are frequently used without any further explanation. 
 These terms are described in more detail in the following list:
 
-* Machine Learning = A scientific study of algorithms and statistical models that improve progressively on a specific task. In our project this is used for classifying relevant questions.
-* Naive Bayes = In machine learning a family of simple probabilty classifiers. 
-With strong independence assumptions between the features.
-* Logistic Regression = A statistical model that forms a logistic function to model a binary dependent variable.
+* Machine Learning = A scientific study of algorithms and statistical models 
+that improve progressively on a specific task. In our project this is used for classifying relevant questions.
+* Naive Bayes = A family of probability classifiers based on the bayes theorem. 
+This module assumes strong independence between the features and is a supervised machine learning method.
+* Logistic Regression = A statistical model that forms a logistic function to 
+model a binary dependent variable. A linear method where the predictions are 
+transformed by using a sigmoid function, which can be used for predicting binary dependent variables. 
 
 * Skewed Dataset = A dataset with an imbalance between the different classes. 
 in our project this reflects into the amount of relevant questions with a 1:5 ratio to the non-relevant sentences.
-* Feature = The input a predictive model can use to create a function to predict unseen data. 
-These features can come in different forms. In our project most of these features are Vectors.
+* Feature = The input for a predictive model. These features can come in 
+different types. In our project most of these features are vectors.
 
 * Data Collection = the process of collecting data that the researchers want to use to create a model to predict a certain value. 
-* Data Preperation = The process of converting and cleaning a raw dataset into an input for a predictive model.
-* Data Visualisation = The process of visualizing the results into meaningful graphs to display your findings.
+* Data Preparation = The process of converting and cleaning a raw dataset into an input for a predictive model.
+* Data Visualisation = The process of visualizing the data into figures which present the data in a meaningful way. 
+This also includes the representation of the results.
 
-* Relevant question = A sentence from our dataset that contains a question that could be used as an input for a chatbot. 
+* Relevant question = A sentence from our dataset that contains a question that 
+could be used as an input for a chatbot. 
 
 ### Data sets
 The data sets that we used in the project were supplied by our project owner. 
-Because of confidentiality I am not able to supply them. 
+Because of confidentiality I am not allowed to supply them. 
 
 ## Courses
-I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
+I will specify which courses I have completed. 
 
 ### Datacamp
 We were granted access to a full DataCamp account during this course.
@@ -107,73 +112,78 @@ I was able to finish all the courses on time except for the final two, because o
 ![DataCamp Courses](/images/DataCamp_courses.png)
 
 ##### Introduction to Python
-Because of my previous experience with Python, this course didn't really add much to my knowledge on Python. 
+Because of my previous experience with Python. This course was not adding much to my knowledge in Python. 
 
 ##### Intermediate Python for Data Science
-In this course I have gained experience working with Pandas, which was a great help during the rest of my project. 
-This was also my first time working with matplotlib. This helped me to visualize my future findings in data science.
+In this course I have gained experience in working with Pandas. This was a great help during the rest of my project. 
+This was also my first time working with matplotlib. This helped me to visualize my findings in data science.
 
 ##### Customizing plots
-I have continued to expand my knowledge on different ways of visualizing the given Data. 
-Because we only received raw email data from our Project owner it was difficult to visualize our data at first. 
-After some experimenting I was able to convert the text to values that I was able to plot and that were helpful for the project.
+I have continued to expand my knowledge in different ways to visualize the given Data. 
+It was difficult to visualize the data at first, because we only received raw email data from the project owner.
+After some research I was able to convert the text to values that I was able to plot and which were helpful for the project.
 An example of this is the following graph depicting the amount of emails sent per month to the project owner about the noted categories. 
-This graph gave us an the project owner a good visual overview of when emails were sent and the outliers. 
+This graph gave us and the project owner a good visual overview of when emails were sent. 
 ![DataCamp Courses](/images/email_categorien_per_maand.jpg)
 
 ##### Introduction and flat files
-For this course we only had to finish the first chapter. This chapter mostly teached me about different ways of reading our files. 
-At first we didn't have access to csv file and we had to work with text files for our project. This later changed when we received new exports. 
-These exports could be easily imported into a Pandas dataframe. 
+For this course we only had to finish the first chapter. This chapter mostly taught me different ways of reading our files. 
+At first we did not have access to a csv file and we had to work with text files for the project. 
+This later changed when we received transformed data in csv format.
+These exports could be easily imported into a Pandas dataframe, because of this course.
 
 ##### Writing your own functions
-This course was mostly basic knowledge for me as well. It didn't really help me much in the project, because I was already working with functions.
+This course was mostly basic knowledge for me as well. 
+It did not really help me much in the project, because I was already working with functions before.
 
 
 ##### Data ingestion & inspection
-This chapter mostly helped me understand the basic functionality from Pandas. 
-Because I didn't have a lot of experience with Dataframes this course was really helpful to showcase the possibilities.
-In our main project we mostly used pandas to store our data in.
+This chapter mostly helped me understand the basic functionality of Pandas. 
+Because I didn't have a lot of experience with dataframes this course was really helpful to show the possibilities.
+In our main project we mostly used pandas to store our data.
 
 ##### Exploratory data analysis
-This chapter wasn't as helpful as the others. This was mostly because the focus 
+This chapter was not as helpful as the others. This was mostly because the focus 
 during the chapter was mostly on representing numeric values in graphs through the use of pandas.
-Because of the shape of our data in strings, we didn't have the ability to use this knowledge.
+Because our data consisted only of strings, there was no useful possibility to use this knowledge.
 
 ##### Python Data Science Toolbox (Part 2)
-This course wasn't really helpful for our project. However it was a nice refresh of using different methods to process large amounts of data.
-It was also the first time for me to use a generator in python. It was interesting to see the use cases for this function. 
-I haven't used the data loading in chunks methods in our project. Our dataset was small enough for our laptops to load all the data at once. 
+This course was not really helpful for our project. 
+However it was an interesting course on using different methods to process large amounts of data.
+It was also the first time for me to use a generator in python. 
+The data for the project was not big enough, so it did not need to be loaded in chunks. 
+It was small enough for our laptops to load all the data at once. 
 
 ##### Plotting 2D arrays
 For our project we mostly plotted accuracies and f1 scores to visualize the performance of a certain model or type of feature. 
-This made it that the course about 2d arrays was interesting, but not very useful for our project. 
+Therefore besides that the course about 2d arrays was interesting, it was not very relevant for the project. 
 The issue I had with plotting function was that I always needed to look them up after I was done with the chapter.
-It was helpful to showcase the possibilities, but it will still take lots of practice to get used to the different functions and parameters. 
+It was helpful to see the possibilities, but it will still take lots of practice to get used to the different functions and parameters. 
 
 ##### Statistical plots with Seaborn
-This chapter was again not very useful for our project. It helped me to use seaborn and see the possibilities it can provide.
-I wish I would have been able to use it in our project, but i will keep it in mind for future projects. 
+This chapter was unfortunately not very useful for our project, but it helped 
+me to use seaborn and see the possibilities it can provide.
 
 ##### Cleaning Data in Python
-Because this course was mainly focused on numerical data analyses it wasn't as useful as I hoped it to be.
-For our project we performed a lot of data cleaning. This mostly contained retrieving the email from a large file and cleaning our replies from all the emails. 
-Because our data was all text I had to look elsewhere for ways to clean out the unnecessary data.
+Because this course was mainly focused on numerical data analyses it was not as useful as I hoped it to be.
+For our project we performed a lot of data cleaning. 
+This mostly contained retrieving the email from a large file and cleaning the replies from all the emails. 
+Because our data was all text I had to look elsewhere for ways to clean out all the data except the body of the emails.
 
 ##### Statistical Thinking in Python (Part 1)
 This entire chapter was very useful as a way to practise working with a numerical dataset. 
-However it was of no use for our project. As mentioned above, I wasn't able to convert text to meaningful numerical values. 
+However I have not been able to use the knowledge in the project. 
 
 ##### Supervised Learning with scikit-learn
 This was probably the most useful course in the entire Datacamp selection for our project. 
 Especially the classification and fine-tuning your model chapters were very useful and gave clear instructions of ways to combat a certain issue.
 The chapter about fine-tuning your model helped us once we got our first model working with the data. 
-It assisted me to find different ways on finding possibilities to improve the accuracy of our model. 
+It assisted me to find different ways on finding possibilities to improve the accuracy of our predictive model. 
 
 ##### Conclusion
-In the beginning DataCamp didn't really add anything to my knowledge on Python. 
+In the beginning DataCamp did not really add anything to my existing knowledge on Python. 
 It did help my project members progress and get a better understanding on what I was working on.
-Some courses were not related to our project. Because of this I wasn't able to put everything into practise. 
+Some courses were not related to our project. Because of this I was not able to put everything into practise. 
 I did learn a lot from the courses and chapters that I will take with me to upcoming projects.
 
 ### Coursera
@@ -194,8 +204,8 @@ This chapter will explain more on how I have used different predictive models du
 I will reference certain scrum tasks for more detail.
 
 We used Predictive Models in the first part of our project. We classified our 
-dataset per sentence if it was a relevant question. After our classification we used the data
-to train and test our different predictive models.
+dataset per sentence if it contains a relevant question or not. 
+After our classification we used the data to train and test our different predictive models.
 For our project we have worked with the following predictive models:
 
 - Naive Bayes Classifier
@@ -208,7 +218,7 @@ A predictive model doesn't accept a list of raw strings as an input.
 So we had to convert these strings into vectors that could be used by our models.
 With most of these models we have tried different feature sets. 
 The following feature sets were used for testing the performance of a model. 
-Creation of these feature sets is explained in further detail at Data Preparation.
+Creation of these feature sets is explained in further detail in the part: [Data preparation](#data-preparation).
 
 - Count Vectors
 - TF-IDF Vectors 
@@ -216,7 +226,7 @@ Creation of these feature sets is explained in further detail at Data Preparatio
     - N-gram level
     - Character level
 
-The final two models we did most of our testing one was the Naive Bayes Classifier and the Logistic Regression.
+The final two models we did most of our testing with, were Naive Bayes Classifier and Logistic Regression.
 In our model we came to the conclusion that for classifying relevant questions from our dataset,
 it was best to use Logistic Regression with Count Vectors set to 1500 features.
 
@@ -258,25 +268,11 @@ print(score(y_cross,classifier.predict(xcross_count),average='weighted'))
 ```
 
 ## Data preparation
-Our data preparation mostly consisted of cleaning the data and creating the 
-needed features for the models we wanted to use.
-
-In order to clean the data I did research on different methods people used to 
-get a better performing model. I would than try those methods out on our data and compare them
-directly with the original score to see if it would improve. Most of the cleaning we performed
-didn't have a big impact on the scores, and some results even made the score worse.
-In the following two figures it is shown that for both recall and precision the cleaning on our data had marginal effect.
-
-![Precision score](/images/precision_cross_val_cleaning.png)
-![Recall score](/images/Recall_cross_val_cleaning.png)
-
-As you can see the difference between these values is so small it won't have an 
-effect on the outcome of our project.
+Our data preparation mostly consisted of creating features for our models and cleaning the data.
 
 In order for the predictive models to understand our data we needed to prepare it first. 
 All the sentences were converted into vectors for the model to be able to understand the data.
 I will describe the two different methods that we followed for converting our sentences into these vectors.
-
 
 In the following example the Count Vectorizer is created and the full data set is fitted on the vectorizer.
 Once the vectorizer is done it will create a Vector for the given sentences (X)
@@ -301,7 +297,6 @@ count_vect.fit(all_text)
 # Transform the wanted sentences into a count vector
 X_count = count_vect.transform(X)
 ```
-
 
 The same goes for the TF-IDF transformer. In the given example the three possible transformers are displayed.
 ```python
@@ -331,6 +326,89 @@ X_TF_IDF_ngram = tfidf_vect_ngram.transform(X)
 X_TF_IDF_ngram_chars = tfidf_vect_ngram_chars.transform(X)
 ```
 
+In order to clean the data I researched different methods to clean text. 
+I would than try those methods out on our data and compare them
+directly with the original score to see if the accuracy would improve. 
+The following class was created for our project to clean every sentence.
+
+```python
+import string
+import unicodedata
+import re
+from nltk.stem.snowball import SnowballStemmer
+from DataSources.fixtures import get_gemeenten
+from itertools import groupby, chain
+from nltk.corpus import stopwords
+
+class PreTraining:
+    def __init__(self):
+        self.sentence = None
+        self.stemmer = SnowballStemmer('dutch', ignore_stopwords=True)
+        self.locations = get_gemeenten()
+        self.dutch_stopwords = stopwords.words('dutch')
+
+    def prepare_sentence(self, sentence):
+        self.sentence = sentence
+        self.to_lower()
+        self.remove_urls()
+        self.remove_punctuation()
+        self.remove_diacritics()
+        self.remove_spaces()
+        self.normalize_numbers()
+        self.normalize_location_data()
+        return self.sentence
+
+    def to_lower(self):
+        self.sentence = self.sentence.lower()
+
+    def remove_urls(self):
+        self.sentence = re.sub(r"http\S+", "", self.sentence)
+
+    def remove_punctuation(self):
+        table = str.maketrans({key: None for key in string.punctuation})
+        self.sentence = self.sentence.translate(table)
+
+    def remove_diacritics(self):
+        self.sentence = unicodedata.normalize('NFKD', self.sentence).encode('ASCII', 'ignore').decode('utf-8')
+
+    def remove_spaces(self):
+        self.sentence = ' '.join(self.sentence.split())
+
+    # todo doesn't work well, needs better accuracy
+    def sentence_stemmer(self):
+        self.sentence = self.stemmer.stem(self.sentence)
+
+    def normalize_location_data(self):
+        regex = re.compile(r'\b%s\b' % r'\b|\b'.join(map(re.escape, self.locations)))
+        self.sentence = regex.sub('LOCATIE', self.sentence)
+
+    def normalize_numbers(self):
+        grouped = groupby(self.sentence, str.isdigit)
+        self.sentence = ''.join(chain.from_iterable('NUMWAARDE' if k else g for k,g in grouped))
+
+    def remove_stopwords(self):
+        regex = re.compile(
+            r'\b%s\b' % r'\b|\b'.join(map(re.escape, self.dutch_stopwords)))
+        self.sentence = regex.sub('', self.sentence)
+```
+
+It could be used in the following way: 
+```python
+PreTrainer = PreTraining()
+cleaned_sentence = PreTrainer.prepare_sentence(sentence)
+```
+
+Most of the cleaning we performed did not have a big impact on the scores, 
+and some results even made the score worse.
+In the following two figures it is shown that for both recall and precision the 
+cleaning on our data had marginal effect.
+
+![Precision score](/images/precision_cross_val_cleaning.png)
+![Recall score](/images/Recall_cross_val_cleaning.png)
+
+As you can see the difference between these values is so small it does not have an 
+effect on the outcome of our project.
+
 ## Data Visualization
 Once all the coding and testing is done, the most important final chapter is to 
 visualize your findings. After doing research on possibilities to visualize your findings we tried multiple graphs.
@@ -339,20 +417,19 @@ made some graphs that were used in the friday presentations and just for
 the team to better understand the results.
 
 The visualization I made for our project were the Confusion Matrices that are 
-shown in the scrum ticket: Trying different methods and storing results in readable format.
-
-
+shown in the scrum ticket: [Trying different methods and storing results in readable format](#trying-different-methods-and-storing-results-in-readable-format).
 
 ## Data collection
-The data collection part of our project was absent, because we received our 
-data set directly from the project owner. 
+The data set we received from our project owner was dumped from their email system. 
+All the emails with their responses were stored in a csv format.
+It was delivered to us as 150 different csv files. 
+Each file contained all the messages that were manually categorised.  
 
-As part of our data cleaning process we did use an external dataset. 
-We wanted to see if we would normalize all the Dutch city names into a 
-normalized word: LOCATION
+As part of our data cleaning process an external dataset was used. 
+We wanted to see if we would improve the accuracy of our model if all the Dutch city names were normalized.
 
-We found a dump of all the cities in the Netherlands in Json format. 
-We made this function to retrieve only the city names and replace them with LOCATION in our own dataset.
+A dump of all the cities in the Netherlands was used in Json format. 
+This function is used to replace city names with LOCATION in our dataset.
 
 ```python
 import re
@@ -383,18 +460,17 @@ data source for personal development.
 
 ## Evaluation
 The evaluation of the models was usually done with the precision, recall and f1 scores. 
-These scores made it easy to compare models when using a variable amount of features or when comparing different models.
-Because you are using numeric values, it is also easy to visualize the results. 
+These scores made it easy to compare models when using a variable amount of features for comparing different models.
 
 Apart from numeric evaluation, we also performed an error analyses. 
 By exporting all the incorrect predictions we have been able to improve our 
 initial classification and find patterns on where the model has issues to perform.
-It was funny to see how the model was in some cases better at recognizing 
-relevant questions than we intentionally labeled. After relabeling these questions the results of our model improved. 
+It was interesting to see how the model was in some cases better at recognizing 
+relevant questions than we intentionally labeled.
 Finding patterns in the mistakes was also a part of our error analyses. 
-The most noticeable mistake that was made had to do with unique names and other personal information.
-Greetings with names or signatures at the bottom of emails were sometimes 
-incorrectly labeled as an interesting question. 
+The most noticeable mistake that was made had to do with greetings in a sentence.
+In some cases a sentence was made up with a greeting and a relevant question. 
+The model labeled these sentences as not relevant, because of the greeting, that would have been labeled as not relevant.
 
 At this point we haven't figured out a way to give a certain weight to these 
 questions, but this could be a way to elevate this project to a next level to 
@@ -410,7 +486,7 @@ and if I am able to use it in the future I would definitely.
 
 The Coursera courses were helpful for background understanding of the models and their functionality.
 Also to see the bigger picture and how the process of machine learning was better explained.  
-Less useful was the fact that in the Coursera courses Python was not the 
+Less practical was the fact that in the Coursera courses Python was not the 
 programming language used for coding. This meant I could not use all of the same tools they used. 
 This way I always had to take an extra step to look for an alternative and I 
 could not directly apply everything I learned to my project.
@@ -420,13 +496,19 @@ Because I had previous experience with working with Python I could directly
 start with the Machine learning part of the minor. It was also helpful for my team because I could help 
 them with their problems and I could teach them best practices in Python.  
 
-## Friday Presentations
+## Communication
+
+### Tuesday Presentations
+Every tuesday we worked at the office of our project owner. 
+As a group we presented our findings from the week before. 
+We also discussed issues we were having and they helped us where possible.
+
+### Friday Presentations
 For our project we had to present our progress and issues each friday to an audience.
 Once every two weeks the audience consisted of only students and the teachers. 
 The other friday was a public presentation where project owners were allowed to come and sit in.
 It was important to keep in mind when it was a public presentation in order to prepare the presentation for the correct audience.
 
-### Preparation
 As a group we always prepared the presentation together. Because our team was 
 split up in different specialities we always came together before the 
 presentation to discuss our progress and issues. This was then converted into a presentation. 
@@ -450,6 +532,11 @@ of two where there is at least one student who is working primarily on the code 
 * [Week 15](/presentations/2018.12.07%20Presentatie.pptx)
 * [Week 17](/presentations/2018.12.21%20Presentatie.pptx)
 
+### Paper
+The paper was mostly written using the results I created in Python. 
+I have personally written about topic modelling. The communication about the results went well. 
+In cases where something was unclear, I was able to give the rest of the group a clear view of the results.
+This way everybody understood what I made and the thought behind it.
 
 ## Scrum
 At the start of the course we were advised to use some kind of scrum 
@@ -715,7 +802,17 @@ def split_replies_from_file(data_frame):
 The unwantedSubjectStarts is a tuple with strings of common words used in
 the email subjects. In case a subject starts with one of these words it gets filtered out.
 
+ ## Other
+ During our error analysis we discovered our models had issues processing sentences that contained greetings.
+ I was interested in finding a solution to this problem, so I did some research. 
+ On github I came across a tool that would split an email into a salutation, body and signature. 
+ This seemed interesting at first, but the tool was hardcoded in English. So it would not have worked on our Dutch sentences. 
+ I made a fork from their branch in order to add internationalization to their tool. 
+ This fork can be seen ![here](https://github.com/timsun28/EFZP). 
  
+ Unfortunately after more testing it did not work properly on our data. 
+ Improvements needed to be made, but because of time management it could not be done yet. 
+  
 
 
 
