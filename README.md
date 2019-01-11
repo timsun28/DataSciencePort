@@ -513,8 +513,9 @@ As a group we always prepared the presentation together. Because our team was
 split up in different specialities we always came together before the 
 presentation to discuss our progress and issues. This was then converted into a presentation. 
 We tried to get everyone to present as often as possible in order for everyone to do their part. 
-This meant presenting once every two weeks. We also tried to present in groups 
+This meant I presented at least once every two weeks. We also tried to present in groups 
 of two where there is at least one student who is working primarily on the code and one student who focuses more on the report.
+
 
 ### List of presentations
 * [Week 1](/presentations/2018.08.31%20Presentatie.pptx)
@@ -553,7 +554,7 @@ As well as the final result and how it was useful for our project.
 ##### Description
 This ticket was made to analyze the data we received from our project owner. 
 The data was given in a  txt file with no explanation of the structure. 
-So we had to do our analyses the file by ourself and figure out the way the 
+So we had to do  analysis of the file by ourself and figure out the way the 
 file was dumped from their database. 
 
 ##### Process
@@ -660,7 +661,7 @@ a certain set of model and feature.
 ##### Description
 This task described the process of creating code to store our results in an 
 easy way, so the rest of the team could use them to draw conclusions from them. 
-I wasn’t well aware of the different possibilities to visualize the 
+I was not well aware of the different possibilities to visualize the 
 performance of a model, I also had to do some research. 
 
 ##### Process
