@@ -80,15 +80,18 @@ These terms are described in more detail in the following list:
 * Machine Learning = A scientific study of algorithms and statistical models that improve progressively on a specific task. In our project this is used for classifying relevant questions.
 * Naive Bayes = In machine learning a family of simple probabilty classifiers. 
 With strong independence assumptions between the features.
-
 * Logistic Regression = A statistical model that forms a logistic function to model a binary dependent variable.
+
 * Skewed Dataset = A dataset with an imbalance between the different classes. 
 in our project this reflects into the amount of relevant questions with a 1:5 ratio to the non-relevant sentences.
+* Feature = The input a predictive model can use to create a function to predict unseen data. 
+These features can come in different forms. In our project most of these features are Vectors.
 
 * Data Collection = the process of collecting data that the researchers want to use to create a model to predict a certain value. 
 * Data Preperation = The process of converting and cleaning a raw dataset into an input for a predictive model.
 * Data Visualisation = The process of visualizing the results into meaningful graphs to display your findings.
 
+* Relevant question = A sentence from our dataset that contains a question that could be used as an input for a chatbot. 
 
 ## Courses
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
