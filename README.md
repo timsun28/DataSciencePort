@@ -93,6 +93,10 @@ These features can come in different forms. In our project most of these feature
 
 * Relevant question = A sentence from our dataset that contains a question that could be used as an input for a chatbot. 
 
+### Data sets
+The data sets that we used in the project were supplied by our project owner. 
+Because of confidentiality I am not able to supply them. 
+
 ## Courses
 I will specify which courses I have taken and in cases where the courses were relevant for our project I will add a note to the course. 
 
